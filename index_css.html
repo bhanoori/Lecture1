@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>
+				Index_CSS
+			</title>
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<style>
+				ol li {
+					color: red;
+					}
+				ol > li {
+					font-weight: bold;
+					}
+
+
+
+
+				input[type=text]{
+				background-color: red;
+				}
+				input[type=number]{
+				background-color: yellow;
+				}
+
+
+
+
+				button{
+					width: 200px;
+					height:50px;
+					font-size: 24px;
+					background-color: green;
+				}
+				button:hover{
+					background-color: orange;
+				}
+				
+				
+				
+				
+				a::before{
+					content: "\21d2 Click here: ";
+					font-weight: bold;
+					}
+
+
+
+
+				p::selection {
+					color:red;
+					background-color: yellow;
+				}
+				
+				
+				
+				
+				@media print {
+					.screen-only {
+						display: none;
+					}
+				}
+
+
+
+				@media (min-width: 500px) {
+					.screen-size-color {
+						background-color: red;}
+					h1::before{
+						content:"Big window content"
+						}
+					}
+				@media (max-width: 499px) {
+					body {
+						background-color: yellow;}
+					h1::before{
+						content:"Small window content"
+						}
+					}
+					
+					
+					
+					
+				
+				.container {
+						display: flex;
+						flex-wrap: wrap;
+				}
+				.container > div {
+						background-color:springgreen;
+						font-size: 20px;
+						margin: 20px;
+						padding: 20px;
+						width: 200px;
+				}
+				
+				
+				
+				
+				
+				.grid{
+					background-color: green;
+					display: grid;
+					padding: 20px;
+					grid-column-gap: 20px;
+					grid-row-gap: 10px;
+					grid-template-columns: 200px 200px auto
+					}
+				.grid-item{
+					background-color: white;
+					font-size: 20px;
+					padding: 20px;
+					text-align: center;
+					}
+			
+			</style>
+		</head>
+		
+		
+		<body>
+			<ol>
+				<li>List item one</li>
+				<li>List item two</li>
+				<ul>
+					<li>List subitem one</li>
+					<li>List subitem two</li>
+				</ul>
+				<li>List item three</li>
+				<li>List item four</li>
+			</ol>
+			
+		
+			
+			
+			
+			
+			<form>
+				<div>
+					<input name="name" type="text" placeholder="Name">
+					<input name="password" type="password" placeholder="Password">
+					<input name="age" type="number" placeholder="Age">
+				</div>
+			</form>
+			
+			
+			
+			
+			
+			
+			
+			<button>Click me..!</button>
+			
+			
+			
+			
+			
+			
+			
+			<ul>
+				<li><a href="#">one link</a></li>
+				<li><a href="#">another link</a></li>
+				<li><a href="#">third link</a></li>	
+			</ul>
+			
+			
+			
+			
+			
+			
+			<p>Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content 
+			</p>
+
+
+
+
+
+			<p class="screen-only"> Screen-only Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content 
+			</p>
+			
+			
+			
+			
+			
+			<p class="screen-size-color"> Screen-size-color Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content Paragraph content 
+			</p>
+			<h1>1234</h1>
+			
+			
+			
+			
+			<div class="container">
+				<div>a.okati rendu moodu naalugu okati rendu moodu naalugu okati rendu moodu naalugu okati rendu moodu naalugu okati rendu moodu naalugu okati rendu moodu naalugu </div>
+				<div>b.okati rendu moodu naalugu okati rendu moodu naalugu okati rendu moodu naalugu okati rendu moodu naalugu okati rendu moodu naalugu okati rendu moodu naalugu </div>
+				<div>c.okati rendu moodu naalugu okati rendu moodu naalugu okati rendu moodu naalugu okati rendu moodu naalugu okati rendu moodu naalugu okati rendu moodu naalugu </div>
+				<div>d.okati rendu moodu naalugu okati rendu moodu naalugu okati rendu moodu naalugu okati rendu moodu naalugu okati rendu moodu naalugu okati rendu moodu naalugu </div>
+				<div>e.okati rendu moodu naalugu okati rendu moodu naalugu okati rendu moodu naalugu okati rendu moodu naalugu okati rendu moodu naalugu okati rendu moodu naalugu </div>
+				<div>f.okati rendu moodu naalugu okati rendu moodu naalugu okati rendu moodu naalugu okati rendu moodu naalugu okati rendu moodu naalugu okati rendu moodu naalugu </div>
+				<div>g.okati rendu moodu naalugu okati rendu moodu naalugu okati rendu moodu naalugu okati rendu moodu naalugu okati rendu moodu naalugu okati rendu moodu naalugu </div>
+				<div>h.okati rendu moodu naalugu okati rendu moodu naalugu okati rendu moodu naalugu okati rendu moodu naalugu okati rendu moodu naalugu okati rendu moodu naalugu </div>
+				<div>i.okati rendu moodu naalugu okati rendu moodu naalugu okati rendu moodu naalugu okati rendu moodu naalugu okati rendu moodu naalugu okati rendu moodu naalugu </div>
+				<div>j.okati rendu moodu naalugu okati rendu moodu naalugu okati rendu moodu naalugu okati rendu moodu naalugu okati rendu moodu naalugu okati rendu moodu naalugu </div>
+				<div>k.okati rendu moodu naalugu okati rendu moodu naalugu okati rendu moodu naalugu okati rendu moodu naalugu okati rendu moodu naalugu okati rendu moodu naalugu </div>
+				<div>l.okati rendu moodu naalugu okati rendu moodu naalugu okati rendu moodu naalugu okati rendu moodu naalugu okati rendu moodu naalugu okati rendu moodu naalugu </div>
+			</div>
+		
+		
+		
+		
+		
+		
+			<div class="grid">
+				<div class="grid-item">1</div>
+				<div class="grid-item">2</div>
+				<div class="grid-item">3</div>
+				<div class="grid-item">4</div>
+				<div class="grid-item">5</div>
+				<div class="grid-item">6</div>
+				<div class="grid-item">7</div>
+				<div class="grid-item">8</div>
+				<div class="grid-item">9</div>
+				<div class="grid-item">10</div>
+				<div class="grid-item">11</div>
+				<div class="grid-item">12</div>
+			</div>
+		</body>
+	</html>
+	
+<1<!
+Different Types of selectors
+a,b  = multiple element selector
+a b = descendant selector
+a > b = Child selector
+a + b = adjacent sibling selector
+[a=b] = attribute selector
+a:b = pseudoclass selector
+a::b = pseudoelement selector>
